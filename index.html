@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratório Virtual de Robótica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .logo-nuria {
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Menu -->
+    <nav class="bg-blue-500 text-white py-2 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <img src="images/nuria_logo.png" alt="NuRIA Logo" class="h-10 logo-nuria">
+            <div class="flex space-x-4">
+                <a href="#exercicios" class="hover:underline">Guia de Utilização</a>
+                <a href="#sobre" class="hover:underline">Exercicios</a>
+                <a href="#guia" class="hover:underline">Sobre</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-4 shadow-md">
+        <h1 class="text-center text-3xl font-bold">Laboratório Virtual de  Robótica</h1>
+        <p class="text-center mt-2">Aprenda robótica de forma prática e interativa!</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="mb-8">
+            <img src="images/banner2.jpeg" alt="Imagem de Robótica" class="w-full h-auto rounded-lg shadow-md">
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <p class="text-gray-800 text-lg">
+                A Robotics Academy é uma coleção de exercícios e desafios de código aberto para aprender robótica de maneira prática. Há exercícios sobre programação de drones, sobre visão computacional, sobre robôs móveis, sobre carros autônomos, etc. É baseado principalmente no simulador de Gazebo e no ROS. Os alunos programam suas soluções em linguagem Python.
+            </p>
+            <p class="text-gray-800 text-lg mt-4">
+                Cada exercício é composto de (a) arquivos de configuração do Gazebo, (b) um modelo da web para hospedar o código studentilitis e (c) conteúdos teóricos. Os alunos inserem seu código no arquivo de modelo e usam a API simples fornecida para acessar leituras de sensores e comandos de atuadores (HAL API) e a API simples fornecida para Interface Gráfica do Usuário e depuração (GUI API).
+            </p>
+            <p class="text-gray-800 text-lg mt-4">
+                Para execução o aluno lança uma imagem Docker contendo uma simulação Gazebo e se conecta a um servidor web Django para inserir seu código.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="images/pre_requisitos.png" alt="Pré-Requisitos" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Pré-Requisitos</h2>
+                    <a href="cursos/pre-requisitos.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Ir!</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="images/introducao_ao_ros.png" alt="ROS Básico 101" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">ROS Básico 101</h2>
+                    <a href="cursos/ros-basico-101.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Ir!</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="images/fundamentos_robotica.jpg" alt="Fundamentos de Robótica" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Fundamentos de Robótica</h2>
+                    <a href="cursos/fundamentos-de-robotica.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Ir!</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="images/agv.png" alt="Navegação com ROS 101" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Navegação com ROS 101</h2>
+                    <a href="cursos/navegacao-com-ros-101.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Ir!</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="images/robotic_arm1.jpg" alt="Manipulação Robótica 101" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Manipulação Robótica 101</h2>
+                    <a href="cursos/manipulacao-robotica-101.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Ir!</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="images/banner2.jpeg" alt="Laboratório Virtual ROS1" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Laboratório Virtual ROS1</h2>
+                    <a href="cursos/laboratorio-virtual-ros1.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Ir!</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="images/banner1.jpg" alt="Laboratório Virtual ROS2" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Laboratório Virtual ROS2</h2>
+                    <a href="cursos/laboratorio-virtual-ros2.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Ir!</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <p class="text-center">&copy; 2025 Laboratório Virtual de Robótica. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
