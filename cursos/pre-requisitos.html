@@ -7,9 +7,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         img {
-            max-height: 9rem; /* Aumenta o tamanho da imagem em 25% */
-            max-width: 100%; /* Garante que a largura não ultrapasse o bloco */
-            object-fit: scale-down; /* Garante que a imagem seja exibida inteira */
+            max-height: 19rem; /* Aumenta o tamanho da imagem em 25% */
+            max-width: auto; /* Mantém a proporção da largura */
+            object-fit: contain; /* Garante que a imagem mantenha sua proporção */
         }
     </style>
 </head>
@@ -37,15 +37,47 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
             <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <img src="../images/banner1.jpg" alt="Exercício 1" class="w-full h-48 object-cover">
+                <img src="../images/python_theconstructsim.png" alt="Introdução ao Python para Robótica " class="w-full h-48 object-cover">
                 <div class="p-4">
-                    <h2 class="text-xl font-semibold mb-2">Exercício 1</h2>
+                    <h2 class="text-xl font-semibold mb-2">Introdução ao Python para Robótica - TheConstructSim</h2>
                     <div class="flex justify-between">
-                        <a href="https://github.com/USUARIO/REPO1" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">GitHub</a>
-                        <a href="https://github.com/codespaces/new?repo=USUARIO%2FREPO1" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Codespaces</a>
+                        <a href="https://www.theconstructsim.com/robotigniteacademy_learnros/ros-courses-library/python-for-robotics/" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Acessar</a>
                     </div>
                 </div>
             </div>
+
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="../images/linux_theconstructsim.png" alt="Introdução ao Linux para Robótica" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Introdução ao Linux para Robótica - TheConstructSim</h2>
+                    <div class="flex justify-between">
+                        <a href="https://www.theconstructsim.com/robotigniteacademy_learnros/ros-courses-library/linux-for-robotics/" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Acessar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="../images/cpp_theconstructsim.png" alt="C++ para Robótica" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">C++ para Robótica - TheConstructSim</h2>
+                    <div class="flex justify-between">
+                        <a href="https://www.theconstructsim.com/robotigniteacademy_learnros/ros-courses-library/cpp-for-robotics/" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Acessar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="../images/banner1.jpg" alt="Introdução ao Docker" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Introdução ao Docker</h2>
+                    <div class="flex justify-between">
+                        <a href="../docker_local_howto.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Acessar</a>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
             <!-- Repeat similar blocks for other exercises -->
         </div>
     </main>
