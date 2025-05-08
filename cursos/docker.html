@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Docker Básico</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-600 text-white py-6 text-center shadow">
+        <h1 class="text-3xl font-bold">Tutorial Docker para Iniciantes</h1>
+        <p class="text-lg mt-2">Aprenda o que é Docker e como utilizá-lo passo a passo</p>
+    </header>
+
+    <main class="container mx-auto px-6 py-8">
+        <!-- Introdução -->
+        <section class="mb-8 bg-white p-6 rounded shadow">
+            <h2 class="text-2xl font-semibold mb-4">O que é Docker?</h2>
+            <p>
+                Docker é uma plataforma que permite empacotar aplicações e suas dependências em containers. 
+                Esses containers garantem que o software funcione de maneira consistente em qualquer ambiente, 
+                facilitando o desenvolvimento, teste e implantação de aplicações.
+            </p>
+        </section>
+
+        <!-- Video -->
+        <section class="mb-8 bg-white p-6 rounded shadow">
+            <h2 class="text-2xl font-semibold mb-4">Vídeo: O que é Docker?</h2>
+            <div class="flex justify-center">
+                <iframe class="w-3/5 h-96 rounded" src="https://www.youtube.com/embed/01MR38eDXz8?si=lNnd2CMh6lX7hE_1" 
+                        title="O que é Docker - Video Explicativo" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- Passo a passo -->
+        <section class="bg-white p-6 rounded shadow">
+            <h2 class="text-2xl font-semibold mb-4">Passo a Passo para Usar o Docker</h2>
+            <ol class="list-decimal pl-6 space-y-4 text-lg">
+                <li>
+                    <strong>Instalar o Docker:</strong>
+                    Acesse <a href="https://www.docker.com/products/docker-desktop" class="text-blue-600 underline" target="_blank">docker.com</a> e baixe o Docker Desktop para seu sistema operacional.
+                </li>
+                <li>
+                    <strong>Verificar a instalação:</strong>
+                    Após a instalação, abra o terminal e execute:
+                    <pre class="bg-gray-200 p-2 rounded mt-2">docker --version</pre>
+                </li>
+                <li>
+                    <strong>Executar seu primeiro container:</strong>
+                    Teste com o comando:
+                    <pre class="bg-gray-200 p-2 rounded mt-2">docker run hello-world</pre>
+                    Esse comando baixa uma imagem de teste e executa um container simples.
+                </li>
+                <li>
+                    <strong>Listar containers ativos:</strong>
+                    <pre class="bg-gray-200 p-2 rounded mt-2">docker ps</pre>
+                </li>
+                <li>
+                    <strong>Buscar uma imagem do Docker Hub:</strong>
+                    Por exemplo, para baixar uma imagem do Ubuntu:
+                    <pre class="bg-gray-200 p-2 rounded mt-2">docker pull ubuntu</pre>
+                </li>
+                <li>
+                    <strong>Rodar um container interativo:</strong>
+                    <pre class="bg-gray-200 p-2 rounded mt-2">docker run -it ubuntu bash</pre>
+                    Isso abrirá um terminal dentro do container Ubuntu.
+                </li>
+                <li>
+                    <strong>Parar um container:</strong>
+                    Primeiro encontre o ID com <code>docker ps</code> e depois:
+                    <pre class="bg-gray-200 p-2 rounded mt-2">docker stop [ID_DO_CONTAINER]</pre>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Guia para Iniciantes -->
+        <section class="bg-white p-6 rounded shadow">
+            <h2 class="text-2xl font-semibold mb-4">Guia para Iniciantes em Docker</h2>
+            <p class="text-gray-800 text-lg mb-4">
+                Este tutorial foi inspirado no artigo "<a href="https://www.freecodecamp.org/portuguese/news/um-guia-para-iniciantes-em-docker-como-criar-sua-primeira-aplicacao-com-o-docker/" target="_blank" class="text-blue-500 hover:underline">Um guia para iniciantes em Docker</a>" do FreeCodeCamp. Ele aborda como criar sua primeira aplicação com o Docker, incluindo comandos úteis e exemplos práticos.
+            </p>
+            <p class="text-gray-800 text-lg mb-4">
+                O artigo explica como configurar o Docker, criar um arquivo <code>Dockerfile</code>, e executar sua primeira aplicação em Python dentro de um container. Além disso, fornece uma lista de comandos úteis para gerenciar imagens e containers.
+            </p>
+            <p class="text-gray-800 text-lg">
+                Para mais detalhes, acesse o artigo completo no FreeCodeCamp: <a href="https://www.freecodecamp.org/portuguese/news/um-guia-para-iniciantes-em-docker-como-criar-sua-primeira-aplicacao-com-o-docker/" target="_blank" class="text-blue-500 hover:underline">Leia o artigo completo</a>.
+            </p>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center py-4 mt-12">
+        <p>&copy; 2025 Tutorial Docker. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
