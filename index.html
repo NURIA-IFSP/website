@@ -6,11 +6,21 @@
     <title>Laboratório Virtual de Robótica</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .logo-nuria {
+        img {
+            max-height: 14rem;
+            max-width: 100%;
+            object-fit: scale-down;
+        }
+        .disabled-btn {
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+            .logo-nuria {
             transform: scale(1.5);
         }
     </style>
 </head>
+
 <body class="bg-gray-100 text-gray-800">
     <!-- Menu -->
     <nav class="bg-blue-500 text-white py-2 shadow-md">
@@ -46,57 +56,90 @@
                 Para utilização da plataforma é importante que o usuário tenha uma conta habilitada no GitHub para poder executar os códigos e tutoriais. A utilização do Codespaces é opcional, mas é altamente recomendada para facilitar o acesso aos tutoriais e exercícios. O Codespaces é uma ferramenta que permite criar ambientes de desenvolvimento na nuvem, facilitando o acesso a recursos computacionais e evitando a necessidade de instalação local de softwares. Sua utilização é gratuita para usuários do GitHub (limite de 60hs mensais)e oferece uma experiência de desenvolvimento eficiente e colaborativa. Também é utilizada a plataforma The ConstructSim em algumas atividades.</Thead>
             </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        
+         <!-- Cursos Grid -->
+        <div id="cursos" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Curso 1 - Pré-requisitos (Ativo) -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
                 <img src="images/pre_requisitos.png" alt="Pré-Requisitos" class="w-full h-48 object-cover">
                 <div class="p-4">
-                    <h2 class="text-xl font-semibold mb-2">Pré-Requisitos</h2>
-                    <a href="cursos/pre-requisitos.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Ir!</a>
+                    <h2 class="text-xl font-semibold mb-2">Pré-requisitos</h2>
+                    <a href="cursos/ros-basico-101.html" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-sm hover:bg-blue-600 hover:scale-105 hover:shadow-md transition-all duration-200 transform">
+                        Ir!
+                    </a>
                 </div>
             </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+
+            <!-- Curso 2 - Fundamentos ROS (Ativo) -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
                 <img src="images/introducao_ao_ros.png" alt="ROS Básico 101" class="w-full h-48 object-cover">
                 <div class="p-4">
                     <h2 class="text-xl font-semibold mb-2">ROS Básico 101</h2>
-                    <a href="cursos/ros-basico-101.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Ir!</a>
+                    <a href="cursos/ros-basico-101.html" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-sm hover:bg-blue-600 hover:scale-105 hover:shadow-md transition-all duration-200 transform">
+                        Ir!
+                    </a>
                 </div>
             </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <img src="images/fundamentos_robotica.jpg" alt="Fundamentos de Robótica" class="w-full h-48 object-cover">
+
+            <!-- Curso 3 - Fundamentos de Robótica - desabilitado -->
+             <div class="border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
+                <img src="images/fundamentos_robotica2.png" alt="Fundamentos de Robótica" class="w-full h-48 object-cover">
                 <div class="p-4">
-                    <h2 class="text-xl font-semibold mb-2">Fundamentos de Robótica</h2>
-                    <a href="cursos/fundamentos-de-robotica.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Ir!</a>
+                    <h2 class="text-xl font-semibold mb-2">Fundamentos de robótica</h2>
+                    <a href="#" class="inline-block bg-gray-300 text-gray-500 px-4 py-2 rounded disabled-btn">
+                        Em breve
+                    </a>
                 </div>
             </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <img src="images/agv.png" alt="Navegação com ROS 101" class="w-full h-48 object-cover">
+
+            <!-- Curso 4 - Navegação - desabilitado -->
+             <div class="border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
+                <img src="images/agv3.png" alt="Navegação com ROS 101" class="w-full h-48 object-cover">
                 <div class="p-4">
                     <h2 class="text-xl font-semibold mb-2">Navegação com ROS 101</h2>
-                    <a href="cursos/navegacao-com-ros-101.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Ir!</a>
+                    <a href="#" class="inline-block bg-gray-300 text-gray-500 px-4 py-2 rounded disabled-btn">
+                        Em breve
+                    </a>
                 </div>
             </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <img src="images/robotic_arm1.jpg" alt="Manipulação Robótica 101" class="w-full h-48 object-cover">
+
+            <!-- Curso 5 - Manipulação Robótica 101 (Ativo) -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
+                <img src="images/robotic_arm1.jpg" alt="Manipulação Roótica 101" class="w-full h-48 object-cover">
                 <div class="p-4">
-                    <h2 class="text-xl font-semibold mb-2">Manipulação Robótica 101</h2>
-                    <a href="cursos/manipulacao-robotica-101.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Ir!</a>
+                    <h2 class="text-xl font-semibold mb-2">Manipulação Roótica 101</h2>
+                    <a href="cursos/manipulacao-robotica-101.html" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-sm hover:bg-blue-600 hover:scale-105 hover:shadow-md transition-all duration-200 transform">
+                        Ir!
+                    </a>
                 </div>
-            </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <img src="images/banner2.jpeg" alt="Laboratório Virtual ROS1" class="w-full h-48 object-cover">
+            </div> 
+
+            <!-- Lab - Laboratório Virtual ROS1 (Ativo) -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
+                <img src="images/noetic.jpg" alt="Laboratório Virtual ROS1 - Noetic" class="w-full h-48 object-cover">
                 <div class="p-4">
                     <h2 class="text-xl font-semibold mb-2">Laboratório Virtual ROS1</h2>
-                    <a href="cursos/laboratorio-virtual-ros1.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Ir!</a>
+                    <a href="cursos/laboratorio-virtual-ros1.html" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-sm hover:bg-blue-600 hover:scale-105 hover:shadow-md transition-all duration-200 transform">
+                        Ir!
+                    </a>
                 </div>
-            </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <img src="images/banner1.jpg" alt="Laboratório Virtual ROS2" class="w-full h-48 object-cover">
+            </div> 
+
+             <!-- Lab - Laboratório Virtual ROS2 (Ativo) -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
+                <img src="images/jazzy.png" alt="Laboratório Virtual ROS2" class="w-full h-48 object-cover">
                 <div class="p-4">
-                    <h2 class="text-xl font-semibold mb-2">Laboratório Virtual ROS2</h2>
-                    <a href="cursos/laboratorio-virtual-ros2.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Ir!</a>
+                    <h2 class="text-xl font-semibold mb-2">Laboratório Virtual ROS2 - Jazzy</h2>
+                    <a href="cursos/laboratorio-virtual-ros2.html" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-sm hover:bg-blue-600 hover:scale-105 hover:shadow-md transition-all duration-200 transform">
+                        Ir!
+                    </a>
                 </div>
-            </div>
+            </div> 
+
         </div>
+        
+       
         <div class="bg-gray-100 p-6 rounded-lg mt-8">
             <h2 class="text-2xl font-bold text-left mb-6">Realizadores</h2>
             <div class="flex justify-center">
