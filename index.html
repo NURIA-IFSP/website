@@ -7,13 +7,49 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-gray-800 flex items-center justify-center h-screen">
+  <!-- Idioma links -->
+  <div class="absolute left-4 top-4 text-sm space-x-2">
+    <a href="#" id="pt-link" class="underline">Português</a>
+    <span>|</span>
+    <a href="#" id="en-link" class="underline">Inglês</a>
+  </div>
+
   <div class="text-center space-y-4">
-    <h1 class="text-3xl font-bold">Escolha o idioma</h1>
-    <p class="text-lg">Select your language</p>
+    <h1 id="title" class="text-3xl font-bold">Escolha o idioma</h1>
+    <p id="subtitle" class="text-lg">Selecione o idioma</p>
     <div class="space-x-4">
-      <a href="pt/index.html" class="bg-blue-500 text-white px-4 py-2 rounded">Português</a>
-      <a href="en/index.html" class="bg-green-600 text-white px-4 py-2 rounded">English</a>
+      <a id="pt-button" href="pt/index.html" class="bg-blue-500 text-white px-4 py-2 rounded">Português</a>
+      <a id="en-button" href="en/index.html" class="bg-green-600 text-white px-4 py-2 rounded">Inglês</a>
     </div>
   </div>
+
+  <script>
+    function setLanguage(lang) {
+      if (lang === 'pt') {
+        document.documentElement.lang = 'pt-BR';
+        document.title = 'LabViR - Escolha de idioma';
+        document.getElementById('title').textContent = 'Escolha o idioma';
+        document.getElementById('subtitle').textContent = 'Selecione o idioma';
+        document.getElementById('pt-button').textContent = 'Português';
+        document.getElementById('en-button').textContent = 'Inglês';
+      } else {
+        document.documentElement.lang = 'en-US';
+        document.title = 'LabViR - Choose language';
+        document.getElementById('title').textContent = 'Choose the language';
+        document.getElementById('subtitle').textContent = 'Select your language';
+        document.getElementById('pt-button').textContent = 'Portuguese';
+        document.getElementById('en-button').textContent = 'English';
+      }
+    }
+
+    document.getElementById('pt-link').addEventListener('click', function(e) {
+      e.preventDefault();
+      setLanguage('pt');
+    });
+    document.getElementById('en-link').addEventListener('click', function(e) {
+      e.preventDefault();
+      setLanguage('en');
+    });
+  </script>
 </body>
 </html>
