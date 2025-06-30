@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussão - LabViR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        img {
+            max-height: 14rem;
+            max-width: 100%;
+            object-fit: scale-down;
+        }
+        .disabled-btn {
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+        .logo-nuria {
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Menu -->
+    <nav class="bg-blue-500 text-white py-2 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <img src="images/nuria_logo.png" alt="NuRIA Logo" class="h-10 logo-nuria">
+            <div class="flex flex-col items-end">
+                <div class="flex space-x-4 mb-1">
+                    <a href="index.html" class="hover:underline">Início</a>
+                    <a href="cursos/guia.html" class="hover:underline">Guia de Utilização</a>
+                    <a href="cursos/exercicios.html" class="hover:underline">Exercicios</a>
+                    <a href="discussion.html" class="hover:underline">Área de Discussão</a>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="flex space-x-2 text-xs">
+                        <a href="pt/index.html" class="hover:underline">Português</a>
+                        <span>|</span>
+                        <a href="en/index.html" class="hover:underline">English</a>
+                    </div>
+                    <div class="flex space-x-2 mt-1 justify-center">
+                        <img src="https://cdn.jsdelivr.net/gh/hjnilsson/country-flags/svg/br.svg" alt="Bandeira do Brasil" class="h-4 w-6 rounded shadow" title="Português">
+                        <img src="https://cdn.jsdelivr.net/gh/hjnilsson/country-flags/svg/us.svg" alt="USA Flag" class="h-4 w-6 rounded shadow" title="English">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-4 shadow-md">
+        <h1 class="text-center text-5xl font-bold">Discussão</h1>
+        <p class="text-center text-xl mt-2">Participe da comunidade LabViR</p>
+    </header>
+
+    <!-- Giscus Discussion Area -->
+    <main class="container mx-auto px-4 py-8">
+        <section class="bg-white p-6 rounded-lg shadow-md max-w-2xl mx-auto">
+            <h2 class="text-2xl font-bold mb-4">Discussão da Comunidade</h2>
+            <p class="mb-4">Utilize o espaço abaixo para dúvidas, sugestões e comentários. Sua participação é importante!</p>
+            <div id="giscus_thread"></div>
+        </section>
+    </main>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="bg-white p-6 rounded-lg shadow-md max-w-2xl mx-auto">
+            <script src="https://giscus.app/client.js"
+                data-repo="NURIA-IFSP/website"
+                data-repo-id="R_kgDOOlBtYg"
+                data-category="General"
+                data-category-id="DIC_kwDOOlBtYs4CsP0S"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="1"
+                data-input-position="bottom"
+                data-theme="light"
+                data-lang="pt"
+                crossorigin="anonymous"
+                async>
+            </script>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4 mt-8">
+        <p class="text-center">&copy; 2025 LabViR - Laboratório Virtual de Robótica. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
