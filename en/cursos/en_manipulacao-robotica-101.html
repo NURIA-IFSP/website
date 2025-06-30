@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotic Manipulation 101</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        img {
+            max-height: 14rem;
+            max-width: 100%;
+            object-fit: scale-down;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Menu -->
+    <nav class="bg-blue-500 text-white py-2 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex space-x-4">
+                <!-- <a href="#activities" class="hover:underline">Activities</a>
+                <a href="#about" class="hover:underline">About</a> -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="mb-8">
+            <h1 class="text-3xl font-bold text-center">Robotic Manipulation with ROS 101</h1>
+            <img src="../../images/robotic_arm1.jpg" alt="Robotic Manipulation 101" class="w-full h-auto rounded-lg shadow-md mt-4">
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <p class="text-gray-800 text-lg">
+                Course description: This course covers the fundamentals of robotic manipulation using ROS and its tools.
+            </p>
+        </div>
+        
+        <!-- MoveIt Tutorials -->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold mb-4">MoveIt Tutorials</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- YouTube Video Block -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+                    <iframe class="w-full h-48" src="https://www.youtube.com/embed/18mouzWyqRo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Introduction to MoveIt</h3>
+                        <p class="text-gray-700">Watch this introductory video about MoveIt (in English).</p>
+                    </div>
+                </div>
+                
+                <!-- MoveIt Tutorial -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="../../images/ros_moveit.png" alt="MoveIt Tutorial" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold mb-2">MoveIt Tutorial</h2>
+                        <div class="flex justify-between">
+                            <a href="https://github.com/NURIA-IFSP/LabVir_moveit_tutorial" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 flex items-center space-x-2">GitHub</a>                      
+                            <a href="https://github.com/codespaces/new?template_repository=NURIA-IFSP/LabVir_moveit_tutorial" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 flex items-center space-x-2">Codespaces</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Demo 1 - Thangs Robotic Arm -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="../../images/moveit_thangs.png" alt="Exercise 1" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold mb-2">Demo 1 - Thangs Robotic Arm</h2>
+                        <div class="flex justify-between">
+                            <a href="https://github.com/NURIA-IFSP/LabVir_moveit_01" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 flex items-center space-x-2">GitHub</a>                      
+                            <a href="https://github.com/codespaces/new?template_repository=NURIA-IFSP/LabVir_moveit_01" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 flex items-center space-x-2">Codespaces</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercises -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+            <!-- UR5 with Robotiq gripper -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="../../images/moveit_ros_banner.png" alt="Pick And Place" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">UR5 Motion with Robotiq Gripper</h2>
+                    <div class="flex justify-between">
+                        <a href="https://github.com/NURIA-IFSP/LabVir_moveit_ur10_lab1/" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 flex items-center space-x-2">GitHub</a>                      
+                        <a href="https://github.com/codespaces/new?template_repository=NURIA-IFSP/LabVir_moveit_ur10_lab1/" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 flex items-center space-x-2">Codespaces</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 01 - Forward Kinematics without MoveIt -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="../../images/moveit_ros_projeto.png" alt="Pick And Place" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Project 1 - Forward Kinematics with UR5</h2>
+                    <div class="flex justify-between">
+                        <a href="https://github.com/NURIA-IFSP/LabVir_moveit_Lab1_v1.2_projeto/" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 flex items-center space-x-2">GitHub</a>                      
+                        <a href="https://github.com/codespaces/new?template_repository=NURIA-IFSP/LabVir_moveit_Lab1_v1.2_projeto/" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 flex items-center space-x-2">Codespaces</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Object manipulation with MoveIt! -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="../../images/moveit_ros_banner.png" alt="Pick And Place" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Using MoveIt! - Inverse Kinematics with UR10</h2>
+                    <div class="flex justify-between">
+                        <a href="https://github.com/NURIA-IFSP/LabVir_moveit_ur10_lab1_new/" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 flex items-center space-x-2">GitHub</a>                      
+                        <a href="https://github.com/codespaces/new?template_repository=NURIA-IFSP/LabVir_moveit_ur10_lab1_new/" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 flex items-center space-x-2">Codespaces</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project - Inverse Kinematics with MoveIt! -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="../../images/moveit_ros_projeto.png" alt="Pick And Place" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Project 2 - Inverse Kinematics with MoveIt!</h2>
+                    <div class="flex justify-between">
+                        <a href="https://github.com/NURIA-IFSP/LabVir_moveit_Lab1_v1.2_projeto/" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 flex items-center space-x-2">GitHub</a>                      
+                        <a href="https://github.com/codespaces/new?template_repository=NURIA-IFSP/LabVir_moveit_Lab1_v1.2_projeto/" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 flex items-center space-x-2">Codespaces</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <p class="text-center">&copy; 2025 LabViR - Virtual Robotics Laboratory. All rights reserved.</p>
+    </footer>
+</body>
+</html>

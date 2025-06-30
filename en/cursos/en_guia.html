@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotic Manipulation 101</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        img {
+            max-height: 14rem;
+            max-width: 100%;
+            object-fit: scale-down;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Menu -->
+    <nav class="bg-blue-500 text-white py-2 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex space-x-4"></div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="mb-8">
+            <h1 class="text-3xl font-bold text-center">How to Use This Platform</h1>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-lg">
+            <p class="mb-4">LabViR is a virtual learning platform dedicated to robotics education. Here, you will find interactive courses that cover everything from the fundamentals of robotics to advanced applications using ROS (Robot Operating System).</p>
+
+            <p class="mb-4">The platform uses the concept of containers to run the courses. Containers are Docker images that contain all the resources needed to run the courses. They can be downloaded and run locally or in the cloud through a web browser. In this project, we chose GitHub Codespaces as the virtual execution environment. Its use is free for GitHub users and has a limit of 60 usage hours per month.</p>
+
+            <p class="mb-6">The images (virtual environments) were created using the official ROS 1 - noetic - repository on Docker Hub (<a href="https://hub.docker.com/r/osrf/ros/tags" class="text-blue-600 hover:underline">https://hub.docker.com/r/osrf/ros/tags</a>) on the Ubuntu Focal 20.04 Linux environment.</p>
+            
+            <p class="mb-4">You can use this platform in two ways:</p>
+            
+            <ul class="list-disc pl-6 mb-4">
+                <li class="mb-2"><strong>Locally:</strong> Download the course and run it on your machine.</li>
+                <li><strong>Online:</strong> Use GitHub Codespaces to run the courses directly in the browser, without the need for local installation.</li>
+            </ul>
+
+            <p class="mb-6">To get started, choose a course and follow the provided instructions. If you have any questions or need assistance, feel free to contact us.</p>
+            
+            <h2 class="text-2xl font-bold mb-4">Using LabViR Locally</h2>
+
+            <ul class="list-disc pl-6 mb-4">
+                <li class="mb-2">Have a GitHub account - <a href="www.github.com" class="text-blue-600 hover:underline">www.github.com</a></li>
+                <li class="mb-2">Have Docker installed and configured on your machine</li>
+                <li class="mb-2">Have VSCode installed with the Remote Development, ROS, and Docker extensions</li>
+                <li class="mb-4">Your computer can run Windows, Mac, or Linux (Linux is recommended for convenience)</li>
+            </ul>
+
+            <p class="mb-2">The steps to run courses locally are:</p>
+
+            <ul class="list-disc pl-6 mb-4">
+                <li class="mb-2">Create a folder on your computer to store the courses – e.g., cursos_ros_labvir</li>
+                <li class="mb-2">Access the repository of the desired course via the <strong>"GitHub"</strong> button. This will clone the repository to your computer.</li>
+                <li class="mb-2">Open VSCode and open the created folder (File -> Add Folder to Workspace).</li>
+                <li class="mb-4">Inside VSCode, click <strong>"Remote-Containers: Reopen in Container"</strong>. This will create a container with all the dependencies needed to run the courses.</li>
+            </ul>
+
+            <div class="bg-yellow-100 border-l-4 border-yellow-500 p-4 mb-6">
+                <p class="font-bold mb-2">Important:</p>
+                <ol class="list-decimal pl-6">
+                    <li class="mb-2">Creating the container may take a few minutes and requires about 6 to 8 GB of disk space.</li>
+                    <li>Once the container is created, the next execution will be much faster.</li>
+                </ol>
+            </div>
+
+            <ul class="list-disc pl-6 mb-6">
+                <li class="mb-2">Once the container is open, the virtual environment will be available in your <strong>browser</strong>. To access it, go to: <span class="font-mono">http://localhost:6080/</span> and make any necessary screen resolution adjustments.</li>
+                <li class="mb-2">From here, you can open VSCode within the virtual environment and work on the course activities. To do this, add the course folder to your workspace (File -> Add Folder to Workspace), open the README.md file (right-click the tab to preview), and follow the instructions to run the course.</li>
+            </ul>
+
+            <div class="bg-yellow-100 border-l-4 border-yellow-500 p-4 mb-6">
+                <p class="font-bold mb-2">Important:</p>
+                <ol class="list-decimal pl-6">
+                    <li>You can run the course from VSCode in the local environment, but <strong>ROS graphical windows will not be displayed</strong>. They will only appear in the virtual environment shown in the browser.</li>
+                </ol>
+            </div>
+
+            <h2 class="text-2xl font-bold mb-4">Using LabViR Remotely</h2>
+
+            <ul class="list-disc pl-6 mb-4">
+                <li class="mb-2">Log in to your GitHub account - <a href="www.github.com" class="text-blue-600 hover:underline">www.github.com</a> – we recommend using GitHub Education with a student/teacher account - <a href="https://docs.github.com/en/education/about-github-education/github-education-for-students/about-github-education-for-students" class="text-blue-600 hover:underline">link</a></li>
+                <li class="mb-4">Access the course you want to run using the <strong>"Open in Codespaces"</strong> button. You will be directed to a Codespaces page where you can choose the virtual machine size.</li>
+                <li class="mb-2">If this is your first time using the repository on Codespaces, you will need to create the virtual environment. Click <strong>"Create codespace on main"</strong> and wait a few minutes for the environment to be created.</li>
+                <li class="mb-2">Once open, Codespaces will launch VSCode in your browser. Just like in the local setup, access the address in the "Ports" tab by clicking <strong>"Open in Browser"</strong>. This will open the virtual environment in your browser. Adjust screen resolution as needed.</li>
+                <li class="mb-4">From here, you can open VSCode within the virtual environment and work normally on the course activities. To do this, add the course folder to your workspace (File -> Add Folder to Workspace), open the README.md file (right-click the tab to preview), and follow the instructions.</li>
+            </ul>
+
+            <div class="bg-yellow-100 border-l-4 border-yellow-500 p-4">
+                <p class="font-bold mb-2">Important:</p>
+                <ol class="list-decimal pl-6">
+                    <li class="mb-2">Codespaces is free <strong>up to 60 hours per month</strong>, so it's important to always close the environment after use.</li>
+                    <li class="mb-2">To close the remote environment, in VSCode click on the Status Bar -> Remote-Containers: Stop Remote Container.</li>
+                    <li>To ensure the environment is closed, go to <a href="www.github.com/codespaces" class="text-blue-600 hover:underline">github.com/codespaces</a> and click <strong>"Stop my codespace"</strong></li>
+                </ol>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <p class="text-center">&copy; 2025 LabViR - Virtual Robotics Laboratory. All rights reserved.</p>
+    </footer>
+</body>
+</html>

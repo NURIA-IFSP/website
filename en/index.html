@@ -26,14 +26,26 @@
     <nav class="bg-blue-500 text-white py-2 shadow-md">
         <div class="container mx-auto flex justify-between items-center">
             <img src="../images/nuria_logo.png" alt="NuRIA Logo" class="h-10 logo-nuria">
-            <div class="flex space-x-4">
-                <a href="cursos/guia.html" class="hover:underline">Guia de Utilização</a>
-                <a href="cursos/exercicios.html" class="hover:underline">Exercicios</a>
-                <!-- <a href="#sobre" class="hover:underline">Sobre</a> -->
+                <div class="flex flex-col items-end">
+                <div class="flex space-x-4 mb-1">
+                    <a href="cursos/en_guia.html" class="hover:underline">User Guide</a>
+                    <a href="cursos/en_exercicios.html" class="hover:underline">Exercises</a>
+                    <a href="discussion.html" class="hover:underline">Discussion Forum</a>
+                    <!-- <a href="#sobre" class="hover:underline">Sobre</a> -->
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="flex space-x-2 text-xs items-center">
+                        <img src="https://cdn.jsdelivr.net/gh/hjnilsson/country-flags/svg/br.svg" alt="Bandeira do Brasil" class="h-4 w-6 rounded shadow" title="Português">
+                        <a href="../index.html" class="hover:underline">Versão em Português</a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
 
+
+
+    
     <!-- Header -->
     <header class="bg-blue-600 text-white py-4 shadow-md">
         <h1 class="text-center text-7xl font-bold">LabViR</h1>
@@ -47,13 +59,17 @@
         </div>
         <div class="bg-white p-6 rounded-lg shadow-md">
             <p class="text-gray-800 text-lg">
-                O Laboratório Virtual de Robótica - LabViR - é uma iniciativa do NuRIA - IFSP (Núcleo de Robótica e Inteligência Artificial) em parceria com o DSI/FEM/Unicamp para disponibilizar uma plataforma aberta para o desenvolvimento de estudos e pesquisas em robótica por meio de ferramentas de código aberto baseadas no ROS através e do uso de ambientes virtuais. A platforma disponibiliza uma série de tutoriais, exercícios e projetos que possibilitam aos usuários adquir conhecimentos os conhecimentos necessários de forma gradativa. Há atividades sobre os pré-requisitos necessários para utilização dos ambientes virtuais - Fundamentos do Linux, Docker, Github e outras, e sobre os conceitos fundamentais do ROS, fundamentos de robótica, Manipulação robótica e Navegação autônoma. Também são disponibilizados ambientes virtuais - LabVirtuais que podem ser replicados e complementados para o desenvolvimento de estudos sobre várias diversos sobre Robótica, IA, Machine Learning e diversas outras áreas. Todos os exemplos e ambientes apresentados podem ser baixados e alterados para o desenvolvimento de novos materiais e estudos. Os ambientes apresentados são baseados no ROS 1 (Noetic), Simulador Gazebo e utilização da linguagem Python. Espera-se que esta plataforma seja ampliada ao longo do tempo a partir de novas contribuições que venham a ser incorporadas. Este é o intuito deste projeto.
+                The Virtual Robotics Laboratory – LabViR – is an initiative by NuRIA – IFSP (Nucleus of Robotics and Artificial Intelligence) in partnership with DSI/FEM/Unicamp, aimed at providing an open platform for the development of studies and research in robotics through open-source tools based on ROS and the use of virtual environments. 
+                The platform offers a series of tutorials, exercises, and projects that allow users to gradually acquire the necessary knowledge. There are activities covering the prerequisites for using the virtual environments – such as Linux Fundamentals, Docker, GitHub, and others – as well as key concepts related to ROS, robotics fundamentals, robotic manipulation, and autonomous navigation. 
+                Virtual environments – VirtualLabs – are also provided, which can be replicated and expanded for the development of studies on a wide range of topics in Robotics, AI, Machine Learning, and related areas. All examples and environments can be downloaded and modified for the development of new materials and research. The environments presented are based on ROS 1 (Noetic), the Gazebo simulator, and Python programming.
+                The goal of this project is to continuously expand the platform through new contributions and collaborative development.
             </p>
             <p class="text-gray-800 text-lg mt-4">
-                Cada módulo é composto por diferentes atividades e tutorais, são sugeridos vídeos, arquivos de configuração, e os códigos poderão ser executados no computador local ou remotamente utilizando o ambiente Codespaces do GitHub. .
+                Each module includes various activities and tutorials. Suggested videos, configuration files, and source code are provided, and they can be run locally or remotely using GitHub Codespaces.
             </p>
             <p class="text-gray-800 text-lg mt-4">
-                Para utilização da plataforma é importante que o usuário tenha uma conta habilitada no GitHub para poder executar os códigos e tutoriais. A utilização do Codespaces é opcional, mas é altamente recomendada para facilitar o acesso aos tutoriais e exercícios. O Codespaces é uma ferramenta que permite criar ambientes de desenvolvimento na nuvem, facilitando o acesso a recursos computacionais e evitando a necessidade de instalação local de softwares. Sua utilização é gratuita para usuários do GitHub (limite de 60hs mensais)e oferece uma experiência de desenvolvimento eficiente e colaborativa. Também é utilizada a plataforma The ConstructSim em algumas atividades.</Thead>
+                To use the platform, it is important that the user has an active GitHub account in order to run the provided code and tutorials. While the use of Codespaces is optional, it is highly recommended to facilitate access to tutorials and exercises. Codespaces is a tool that allows the creation of cloud-based development environments, making it easier to access computing resources and eliminating the need for local software installation. It is free for GitHub users (up to 60 hours per month) and offers an efficient and collaborative development experience.
+                Some activities also make use of the The ConstructSim platform.
             </p>
         </div>
         
@@ -62,31 +78,31 @@
             
             <!-- Curso 1 - Pré-requisitos (Ativo) -->
             <div class="border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
-                <img src="../images/pre_requisitos.png" alt="Pré-Requisitos" class="w-full h-48 object-cover">
+                <img src="../images/pre_requisitos.png" alt="Prerequisites for Robotics with ROS" class="w-full h-48 object-cover">
                 <div class="p-4">
-                    <h2 class="text-xl font-semibold mb-2">Pré-requisitos</h2>
-                    <a href="cursos/ros-basico-101.html" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-sm hover:bg-blue-600 hover:scale-105 hover:shadow-md transition-all duration-200 transform">
-                        Ir!
+                    <h2 class="text-xl font-semibold mb-2">Prerequisites for Robotics with ROS</h2>
+                    <a href="cursos/en_pre-requisitos.html" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-sm hover:bg-blue-600 hover:scale-105 hover:shadow-md transition-all duration-200 transform">
+                        Go!
                     </a>
                 </div>
             </div>
 
             <!-- Curso 2 - Fundamentos ROS (Ativo) -->
             <div class="border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
-                <img src="../images/introducao_ao_ros.png" alt="ROS Básico 101" class="w-full h-48 object-cover">
+                <img src="../images/introducao_ao_ros.png" alt="ROS Fundamentals 101" class="w-full h-48 object-cover">
                 <div class="p-4">
-                    <h2 class="text-xl font-semibold mb-2">ROS Básico 101</h2>
-                    <a href="cursos/ros-basico-101.html" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-sm hover:bg-blue-600 hover:scale-105 hover:shadow-md transition-all duration-200 transform">
-                        Ir!
+                    <h2 class="text-xl font-semibold mb-2">ROS Fundamentals 101</h2>
+                    <a href="cursos/en_ros-basico-101.html" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-sm hover:bg-blue-600 hover:scale-105 hover:shadow-md transition-all duration-200 transform">
+                        Go!
                     </a>
                 </div>
             </div>
 
             <!-- Curso 3 - Fundamentos de Robótica - desabilitado -->
              <div class="border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
-                <img src="../images/fundamentos_robotica2.png" alt="Fundamentos de Robótica" class="w-full h-48 object-cover">
+                <img src="../images/fundamentos_robotica2.png" alt="Robotics Fundamentals" class="w-full h-48 object-cover">
                 <div class="p-4">
-                    <h2 class="text-xl font-semibold mb-2">Fundamentos de robótica</h2>
+                    <h2 class="text-xl font-semibold mb-2">Robotics Fundamentals</h2>
                     <a href="#" class="inline-block bg-gray-300 text-gray-500 px-4 py-2 rounded disabled-btn">
                         Em breve
                     </a>
@@ -95,9 +111,9 @@
 
             <!-- Curso 4 - Navegação - desabilitado -->
              <div class="border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
-                <img src="../images/agv3.png" alt="Navegação com ROS 101" class="w-full h-48 object-cover">
+                <img src="../images/agv3.png" alt="ROS Navegation 101" class="w-full h-48 object-cover">
                 <div class="p-4">
-                    <h2 class="text-xl font-semibold mb-2">Navegação com ROS 101</h2>
+                    <h2 class="text-xl font-semibold mb-2">ROS navigation 101</h2>
                     <a href="#" class="inline-block bg-gray-300 text-gray-500 px-4 py-2 rounded disabled-btn">
                         Em breve
                     </a>
@@ -106,33 +122,33 @@
 
             <!-- Curso 5 - Manipulação Robótica 101 (Ativo) -->
             <div class="border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
-                <img src="../images/robotic_arm1.jpg" alt="Manipulação Roótica 101" class="w-full h-48 object-cover">
+                <img src="../images/robotic_arm1.jpg" alt="Robotic Manipulation with ROS" class="w-full h-48 object-cover">
                 <div class="p-4">
-                    <h2 class="text-xl font-semibold mb-2">Manipulação Robótica 101</h2>
-                    <a href="cursos/manipulacao-robotica-101.html" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-sm hover:bg-blue-600 hover:scale-105 hover:shadow-md transition-all duration-200 transform">
-                        Ir!
+                    <h2 class="text-xl font-semibold mb-2">Robotic Manipulation with ROS 101 </h2>
+                    <a href="cursos/en_manipulacao-robotica-101.html" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-sm hover:bg-blue-600 hover:scale-105 hover:shadow-md transition-all duration-200 transform">
+                        Go!
                     </a>
                 </div>
             </div> 
 
             <!-- Lab - Laboratório Virtual ROS1 (Ativo) -->
             <div class="border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
-                <img src="../images/noetic.jpg" alt="Laboratório Virtual ROS1 - Noetic" class="w-full h-48 object-cover">
+                <img src="../images/noetic.jpg" alt="ROS1 Noetic - VirtualLab" class="w-full h-48 object-cover">
                 <div class="p-4">
-                    <h2 class="text-xl font-semibold mb-2">Laboratório Virtual ROS1 - Noetic</h2>
-                    <a href="cursos/laboratorio-virtual-ros1.html" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-sm hover:bg-blue-600 hover:scale-105 hover:shadow-md transition-all duration-200 transform">
-                        Ir!
+                    <h2 class="text-xl font-semibold mb-2">ROS 1 Noetic - VirtualLab</h2>
+                    <a href="cursos/en_laboratorio-virtual-ros1.html" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-sm hover:bg-blue-600 hover:scale-105 hover:shadow-md transition-all duration-200 transform">
+                        Go!
                     </a>
                 </div>
             </div> 
 
              <!-- Lab - Laboratório Virtual ROS2 (Ativo) -->
             <div class="border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
-                <img src="../images/jazzy.png" alt="Laboratório Virtual ROS2" class="w-full h-48 object-cover">
+                <img src="../images/jazzy.png" alt="ROS1 Jazzy - VirtualLab" class="w-full h-48 object-cover">
                 <div class="p-4">
-                    <h2 class="text-xl font-semibold mb-2">Laboratório Virtual ROS2 - Jazzy</h2>
-                    <a href="cursos/laboratorio-virtual-ros2.html" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-sm hover:bg-blue-600 hover:scale-105 hover:shadow-md transition-all duration-200 transform">
-                        Ir!
+                    <h2 class="text-xl font-semibold mb-2">ROS 2 Jazzy - VirtualLab</h2>
+                    <a href="cursos/en_laboratorio-virtual-ros2.html" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-sm hover:bg-blue-600 hover:scale-105 hover:shadow-md transition-all duration-200 transform">
+                        Go!
                     </a>
                 </div>
             </div> 
@@ -141,7 +157,7 @@
         
        
         <div class="bg-gray-100 p-6 rounded-lg mt-8">
-            <h2 class="text-2xl font-bold text-left mb-6">Realizadores</h2>
+            <h2 class="text-2xl font-bold text-left mb-6">Institutions Involved</h2>
             <div class="flex justify-center">
                 <div class="bg-white rounded-lg shadow-md overflow-hidden w-1/5">
                     <img src="../images/logo_IFSP.png" alt="IFSP" class="w-full h-32 object-contain">

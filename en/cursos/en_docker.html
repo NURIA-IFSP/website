@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Docker Tutorial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-600 text-white py-6 text-center shadow">
+        <h1 class="text-3xl font-bold">Docker Tutorial for Beginners</h1>
+        <p class="text-lg mt-2">Learn what Docker is and how to use it step by step</p>
+    </header>
+
+    <main class="container mx-auto px-6 py-8">
+        <!-- Introduction -->
+        <section class="mb-8 bg-white p-6 rounded shadow">
+            <h2 class="text-2xl font-semibold mb-4">What is Docker?</h2>
+            <p>
+                Docker is a platform that allows packaging applications and their dependencies into containers.
+                These containers ensure that the software runs consistently in any environment, 
+                making it easier to develop, test, and deploy applications.
+            </p>
+        </section>
+
+        <!-- Video -->
+        <section class="mb-8 bg-white p-6 rounded shadow">
+            <h2 class="text-2xl font-semibold mb-4">Video: What is Docker?</h2>
+            <div class="flex justify-center">
+                <iframe class="w-3/5 h-96 rounded" src="https://www.youtube.com/embed/01MR38eDXz8?si=lNnd2CMh6lX7hE_1" 
+                        title="What is Docker - Explained Video" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- Step by Step -->
+        <section class="bg-white p-6 rounded shadow">
+            <h2 class="text-2xl font-semibold mb-4">Step-by-Step Guide to Using Docker</h2>
+            <ol class="list-decimal pl-6 space-y-4 text-lg">
+                <li>
+                    <strong>Install Docker:</strong>
+                    Go to <a href="https://www.docker.com/products/docker-desktop" class="text-blue-600 underline" target="_blank">docker.com</a> and download Docker Desktop for your operating system.
+                </li>
+                <li>
+                    <strong>Verify the installation:</strong>
+                    After installation, open the terminal and run:
+                    <pre class="bg-gray-200 p-2 rounded mt-2">docker --version</pre>
+                </li>
+                <li>
+                    <strong>Run your first container:</strong>
+                    Test with the command:
+                    <pre class="bg-gray-200 p-2 rounded mt-2">docker run hello-world</pre>
+                    This command downloads a test image and runs a simple container.
+                </li>
+                <li>
+                    <strong>List running containers:</strong>
+                    <pre class="bg-gray-200 p-2 rounded mt-2">docker ps</pre>
+                </li>
+                <li>
+                    <strong>Search for an image on Docker Hub:</strong>
+                    For example, to download an Ubuntu image:
+                    <pre class="bg-gray-200 p-2 rounded mt-2">docker pull ubuntu</pre>
+                </li>
+                <li>
+                    <strong>Run an interactive container:</strong>
+                    <pre class="bg-gray-200 p-2 rounded mt-2">docker run -it ubuntu bash</pre>
+                    This will open a terminal inside the Ubuntu container.
+                </li>
+                <li>
+                    <strong>Stop a container:</strong>
+                    First find the ID with <code>docker ps</code> and then:
+                    <pre class="bg-gray-200 p-2 rounded mt-2">docker stop [CONTAINER_ID]</pre>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Beginner's Guide -->
+        <section class="bg-white p-6 rounded shadow">
+            <h2 class="text-2xl font-semibold mb-4">Beginner’s Guide to Docker</h2>
+            <p class="text-gray-800 text-lg mb-4">
+                This tutorial was inspired by the article "<a href="https://www.freecodecamp.org/portuguese/news/um-guia-para-iniciantes-em-docker-como-criar-sua-primeira-aplicacao-com-o-docker/" target="_blank" class="text-blue-500 hover:underline">A Beginner's Guide to Docker</a>" from FreeCodeCamp. It covers how to create your first Docker application, including useful commands and practical examples.
+            </p>
+            <p class="text-gray-800 text-lg mb-4">
+                The article explains how to set up Docker, create a <code>Dockerfile</code>, and run your first Python application inside a container. It also provides a list of useful commands to manage images and containers.
+            </p>
+            <p class="text-gray-800 text-lg">
+                For more details, check out the full article on FreeCodeCamp: <a href="https://www.freecodecamp.org/portuguese/news/um-guia-para-iniciantes-em-docker-como-criar-sua-primeira-aplicacao-com-o-docker/" target="_blank" class="text-blue-500 hover:underline">Read the full article</a>.
+            </p>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center py-4 mt-12">
+        <p>&copy; 2025 LabViR - Virtual Robotics Laboratory. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROS Basics 101</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Menu -->
+    <nav class="bg-blue-500 text-white py-2 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex space-x-4">
+                <a href="#atividades" class="hover:underline">Activities</a>
+                <a href="#sobre" class="hover:underline">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="mb-8">
+            <h1 class="text-3xl font-bold text-center">ROS Fundamentals 101</h1>
+            <img src="../../images/banner2.jpeg" alt="Robotics Image" class="w-1/2 h-auto rounded-lg shadow-md mx-auto">
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <p class="text-gray-800 text-lg">
+                Curse description: This course introduces the basic concepts of ROS for beginners.
+                To learn how to set up your local environment using Docker, check the <a href="../docker_local_howto.html" class="text-blue-500 hover:underline">Docker usage guide</a>.
+                To learn how to use Codespaces directly in your browser, check the <a href="../codespaces_howto.html" class="text-blue-500 hover:underline">Codespaces usage guide</a>.
+            </p>
+        </div>
+
+        <!-- ROS Tutorials -->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold mb-4">ROS Tutorials</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Block 1: YouTube Video -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+                    <iframe class="w-full h-48" src="https://www.youtube.com/embed/H1KhBtEPxD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Introduction to ROS</h3>
+                        <p class="text-gray-700">Watch this introductory video about ROS.</p>
+                    </div>
+                </div>
+                <!-- Block 2: Wiki Page -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Official ROS Tutorials</h3>
+                        <p class="text-gray-700 mb-4">Explore the official ROS tutorials on the Wiki.</p>
+                        <a href="http://wiki.ros.org/pt_BR/ROS/Tutorials" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Access Tutorials</a>
+                    </div>
+                </div>
+                <!-- Block 3: GitHub Repo -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">ROS Tutorials Repository</h3>
+                        <p class="text-gray-700 mb-4">Access the repository with examples and tutorials about ROS.</p>
+                        <a href="https://github.com/rostutorials" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Visit Repository</a>
+                    </div>
+                </div>
+                <!-- Block 4: TheConstructSim -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+                    <img src="../../images/ROS_tutorials_theconstruct.png" alt="Exercise 2" class="w-full h-48 object-cover">    
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">ROS Tutorials on TheConstructSim</h3>
+                        <p class="text-gray-700 mb-4">ROS1 tutorial.</p>
+                        <a href="https://app.theconstruct.ai/l/6a774e44/" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Open environment on TheConstructSim</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Demonstrations -->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold mb-4">Demonstrations</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Activity 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="../../images/banner1.jpg" alt="Exercise 1" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold mb-2">Demonstration 1</h2>
+                        <div class="flex justify-between">
+                            <a href="https://github.com/NURIA-IFSP/atividade-01-introducao-ao-ROS" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 flex items-center space-x-2">
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://github.com/codespaces/new?template_repository=NURIA-IFSP/atividade-01-introducao-ao-ROS" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 flex items-center space-x-2">
+                                <span>Codespaces</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Activity 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="../../images/banner1.jpg" alt="Exercise 2" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold mb-2">Demonstration 2</h2>
+                        <div class="flex justify-between">
+                            <a href="https://github.com/NURIA-IFSP/atividade-02-introducao-ao-ROS" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 flex items-center space-x-2">
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://github.com/codespaces/new?template_repository=NURIA-IFSP/atividade-02-introducao-ao-ROS" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 flex items-center space-x-2">
+                                <span>Codespaces</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Activity 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="../../images/banner1.jpg" alt="Exercise 3" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold mb-2">Demonstration 3</h2>
+                        <div class="flex justify-between">
+                            <a href="https://github.com/NURIA-IFSP/atividade-03-introducao-ao-ROS" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 flex items-center space-x-2">
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://github.com/codespaces/new?template_repository=NURIA-IFSP/atividade-03-introducao-ao-ROS" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 flex items-center space-x-2">
+                                <span>Codespaces</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ROS1 Project -->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold mb-4">ROS1 Project</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+                    <img src="../../images/turtle_party.png" alt="ROS1 Project - ROSJECT" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Turtle Party</h3>
+                        <p class="text-gray-700 mb-4">Explore the Turtle Party project to learn more about ROS1.</p>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/NURIA-IFSP/ros101_projeto_turtleparty/tree/main" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">GitHub</a>
+                            <a href="https://github.com/codespaces/new?template_repository=NURIA-IFSP/ros101_projeto_turtleparty" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">GitHub + Codespaces</a>
+                            <a href="https://app.theconstruct.ai/l/6a5471b9/" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Access ROSJECT TheConstructSim</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <p class="text-center">&copy; 2025 LabViR - Virtual Robotics Laboratory. All rights reserved.</p>
+    </footer>
+</body>
+</html>
